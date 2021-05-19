@@ -2,7 +2,7 @@
 makes you type like a fuwwy uwu
 # usage
 1. run owospeak.py
-2. press any key to install dependencies (if required)
+2. press any key to install dependencies and run it again (if required)
 3. done!
 # what gets changed
 - 50% chance of typing owo, uwu, etc after pressing enter
