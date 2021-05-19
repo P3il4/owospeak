@@ -1,6 +1,7 @@
 import os
 import time
 import random
+import sys
 try:
 	import keyboard
 	from win32api import GetKeyState 
@@ -8,10 +9,10 @@ try:
 except ImportError:
 	print('press any key to install dependencies')
 	os.system('pause')
-	os.system('pip install -r requirements.txt --user')
-	import keyboard
-	from win32api import GetKeyState 
-	from win32con import VK_CAPITAL
+	os.system('python -m pip install -r requirements.txt --user')
+	print('done! reopen me')
+	os.system('pause')
+	sys.exit()
 
 random.seed()
 
