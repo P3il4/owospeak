@@ -1,2 +1,2 @@
 keyboard==0.13.5
-pywin32==228
+pywin32
