@@ -65,10 +65,10 @@ def on_press(key):
 	if keyname_c == 'r' or keyname_c == 'l':
 		keyname = 'w'
 
-	if keyname_c == 'x':
+	if keyname_c == 'x' and not keyboard.is_pressed('ctrl'):
 		keyname = 'k'
 
-	if keyname_c == 'c':
+	if keyname_c == 'c' and not keyboard.is_pressed('ctrl'):
 		keyname = 'k'
 
 	if keyname == 'space':
@@ -78,7 +78,7 @@ def on_press(key):
 			keyboard.write(keyname[0] + '-')
 		dupe_set = False
 
-	if keyname_c == 'x':
+	if keyname_c == 'x' and not keyboard.is_pressed('ctrl'):
 		keyboard.write('k')
 		keyname = 's'
 
